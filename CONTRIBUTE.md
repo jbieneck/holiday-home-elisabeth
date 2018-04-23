@@ -1,14 +1,12 @@
 # Project requirements to install
 
 - git
-- npm
 
 
 # Setup the project
 
 ```git clone git@github.com:rbieneck/holiday-home-elisabeth.git```
 
-```npm install```
 
 do your changes
 
