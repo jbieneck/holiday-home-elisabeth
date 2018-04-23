@@ -1,0 +1,34 @@
+{
+  "name": "holiday-home-elisabeth",
+  "version": "1.0.0",
+  "description": "homepage for holiday home elisabeth",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbieneck/holiday-home-elisabeth.git"
+  },
+  "keywords": [
+    "holiday",
+    "home",
+    "elisabeth",
+    "ferienwohnung",
+    "ferienhaus",
+    "deutschland",
+    "spreewald",
+    "brandenburg"
+  ],
+  "author": "Janet Bieneck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rbieneck/holiday-home-elisabeth/issues"
+  },
+  "homepage": "https://github.com/rbieneck/holiday-home-elisabeth#readme"
+}
