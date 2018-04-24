@@ -1,5 +1,6 @@
 body {
     font-family: 'Tangerine', serif;
+    font-size: 12px;
 }
 
 #intro {
@@ -112,4 +113,13 @@ body {
 }
 #image-carousel .carousel-outer {
     position: relative;
+}
+
+/* accordion adjustments */
+#accordion h3 {
+    font-family: 'Tangerine', serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 3px .5em;
 }
