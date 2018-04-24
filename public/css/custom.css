@@ -99,7 +99,6 @@ body {
     width: 15%;
     max-width: 15%;
     height: auto;
-    max-height: auto;
 }
 #image-carousel .carousel-indicators li img.img-thumbnail {
     display: block;
