@@ -96,6 +96,10 @@ body {
     padding: 0px 5px;
 }
 
+#accordion h3 ul li:last-of-type:after {
+    content: "";
+}
+
 /* small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {
     #page-title {
