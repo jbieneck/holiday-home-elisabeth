@@ -26,48 +26,6 @@ body {
     text-shadow: 3px 3px 3px #aaaaaa;
 }
 
-/* small devices (landscape phones, 544px and up) */
-@media (min-width: 544px) {
-    #page-title {
-        font-size: 60px;
-        text-shadow: 3px 3px 3px #aaaaaa;
-    }
-
-    #house-name {
-        margin-top: -12%;
-    }
-}
-
-/* medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {
-    #page-title {
-        font-size: 90px;
-        text-shadow: 6px 6px 6px #aaaaaa;
-    }
-
-    #house-name {
-        margin-top: -14%;
-    }
-}
-
-/* large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    #page-title {
-        font-size: 120px;
-        text-shadow: 9px 9px 9px #aaaaaa;
-    }
-
-    #house-name {
-        margin-top: -13%;
-    }
-}
-
-/* extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    #house-name {
-        margin-top: -11%;
-    }
-}
 
 /* carousel */
 #carousel-frame {
@@ -122,4 +80,87 @@ body {
     font-weight: bold;
     font-style: italic;
     padding: 3px .5em;
+}
+
+#accordion h3 ul {
+    display: none;
+}
+
+#accordion h3 ul li {
+    display: inline;
+}
+
+#accordion h3 ul li::after {
+    display: inline-block;
+    content: "•";
+    padding: 0px 5px;
+}
+
+/* small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+    #page-title {
+        font-size: 60px;
+        text-shadow: 3px 3px 3px #aaaaaa;
+    }
+
+    #house-name {
+        margin-top: -12%;
+    }
+
+    #accordion h3 ul {
+        display: none;
+    }
+}
+
+/* medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    #page-title {
+        font-size: 90px;
+        text-shadow: 6px 6px 6px #aaaaaa;
+    }
+
+    #house-name {
+        margin-top: -14%;
+    }
+
+    #accordion h3 ul {
+        font-size: 18px;
+        font-family: 'Arial', serif;
+        font-weight: bold;
+        color: #999;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0.5rem 0.5rem 0;
+        float: right;
+    }
+}
+
+/* large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #page-title {
+        font-size: 120px;
+        text-shadow: 9px 9px 9px #aaaaaa;
+    }
+
+    #house-name {
+        margin-top: -13%;
+    }
+
+    #accordion h3 ul {
+        font-size: 18px;
+        font-family: 'Arial', serif;
+        font-weight: bold;
+        color: #999;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0.5rem 0.5rem 0;
+        float: right;
+    }
+}
+
+/* extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #house-name {
+        margin-top: -11%;
+    }
 }
