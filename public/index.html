@@ -15,6 +15,9 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 
+    <!-- JQuery UI CSS, e.g. accordion -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
     <!-- let's have some fancy font -->
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine:bolder:italic">
 
@@ -28,6 +31,7 @@
     <link href="css/custom.css" rel="stylesheet" />
 </head>
 <body class="container">
+<!-- TODO: house indicator icons by the title (number of beds, number of rooms, ground size, ...) -->
 <div id="page-title">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div id="intro">Besuchen Sie ...</div>
@@ -90,11 +94,87 @@
     </div>
 </div><!-- /.carousel -->
 
-<!-- Bootstrap core JavaScript -->
-<!-- ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
+<!-- content (accordion) -->
+<!-- TODO: design accordion headers, also use house indicator icons -->
+<div id="accordion">
+    <h3>Beschreibung</h3>
+    <div>
+        <p>
+            Es erwartet Sie eine große, komfortable und geschmackvoll eingerichtete 4-Zimmer-Ferienwohnung auf einem
+            4000 qm großen Grundstück für bis zu 6 Personen bei Selbstverpflegung.
+        </p>
+        <p>
+            Das Ferienhaus verfügt über einen LED- Fernseher, CD-Player, Stereoradio, Kamin, Cerankochfeld, Mikrowelle,
+            ganzjährige Beheizung, elektrische programmierbare Jalousien und kindergesicherte Steckdosen.
+        </p>
+        <p>
+            Es ist idyllisch gelegen, direkt am Waldrand. Im Sommer finden Sie Ruhe und Entspannung im großen umzäunten
+            Garten mit Spielgerüst und Hollywoodschaukel oder auf der mit Gartenmöbeln und Grill ausgestatteten
+            Terrasse, im Winter vor dem Kaminfeuer.
+        </p>
+        <p>
+            Es gibt ein breitgefächertes Angebot an Freizeitmöglichkeiten. Mit dem Auto erreichen Sie in kürzester Zeit
+            den Spreewald, den Indoor-Funpark Tropical Island mit seinem ganzjährig tropischen Klima, zahlreiche Museen
+            der Bergbaugeschichte und nette Gaststätten, die zu einem Kurztripp einladen.
+        </p>
+        <p>
+            Für weitere Informationen rufen Sie uns an 03541 801305 oder 0174 3447460.
+            Wir freuen uns auf Ihren Anruf.
+        </p>
+    </div>
+    <h3>Ausstattung</h3>
+    <div>
+        <!-- TODO: Ausstattung einpflegen -->
+    </div>
+    <h3>Belegungskalender</h3>
+    <div>
+        <!-- TODO: einbinden von einer der anderen Seiten (ferienhaus-mieten-privat.de?) -->
+    </div>
+    <h3>Preise</h3>
+    <div>
+        <p>
+            <!-- TODO: Preis-Tabelle -->
+        </p>
+    </div>
+    <h3>Buchungsanfragen</h3>
+    <div>
+        <p>
+            <!-- TODO: Portal-Direktlinks -->
+            ... oder einfach anrufen, siehe Objektanschrift/Kontaktdaten
+        </p>
+    </div>
+    <h3>Objektanschrift</h3>
+    <div>
+        <p>
+            <!-- TODO: layout -->
+            <!-- TODO: maps verlinken wie auf Spreewald.de -->
+        </p>
+        <p>
+            Mühlenstraße 16
+            03205 - Calau
+
+            Tel: 0174 3447460
+            Email: fewo.elisabeth@gmail.com
+
+            Objekteigentümer:
+            Gerd Bieneck
+            Mühlenstraße 28
+            03205 - Calau
+        </p>
+    </div>
+</div>
+
+<!-- loading js code => placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        // initialize jquery accordion on page load
+        // TODO: move to js file
+        $("#accordion").accordion();
+    });
+</script>
 </body>
 </html>
