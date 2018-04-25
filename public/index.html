@@ -7,7 +7,6 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Ferienhaus Elisabeth">
     <meta name="author" content="Gerd Bieneck">
-    <!-- TODO: create and add favicon.ico -->
     <link rel="icon" href="images/butterfly.png" sizes="192x192">
     <link rel="apple-touch-icon-precomposed" href="images/butterfly.png">
     <meta name="msapplication-TileImage" content="images/butterfly.png">
@@ -40,7 +39,9 @@
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet" />
 </head>
-<body class="container">
+<body class="container-fluid">
+
+<!-- TODO: add legal statements (Telemediengesetz) -->
 <!-- TODO: add background image -->
 <!-- TODO: house indicator icons by the title (number of beds, number of rooms, ground size, ...) -->
 <!-- TODO: allow dynamic background image by season -->
@@ -50,8 +51,7 @@
         <div id="house-name">Ferienhaus Elisabeth ***</div>
     </div>
 </div>
-<!-- Carousel
-================================================== -->
+<!-- carousel -->
 <div id="image-carousel" class="carousel slide col-lg-12 col-md-12 col-sm-12 col-xs-12" data-ride="carousel">
     <div class="carousel-outer">
         <!-- The slideshow -->
@@ -106,7 +106,8 @@
 
 <!-- content (accordion) -->
 <!-- TODO: design accordion headers, (house indicator icons, color by season?) -->
-<div class="container">
+<div class="container-fluid">
+    <!-- TODO: layout accordion sections to use only needed height instead of overall section max height-->
     <div id="accordion" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <h3>Beschreibung</h3>
         <div>
@@ -130,7 +131,7 @@
                 zahlreiche Museen der Bergbaugeschichte und nette Gaststätten, die zu einem Kurztripp einladen.
             </p>
             <p>
-                Für weitere Informationen rufen Sie uns an 03541 801305 oder 0174 3447460.
+                Für weitere Informationen rufen Sie uns gerne an: 03541 801305 oder 0174 3447460.
                 Wir freuen uns auf Ihren Anruf.
             </p>
         </div>
@@ -142,66 +143,119 @@
                 <li>70 m²</li>
             </ul>
         </h3>
-        <div>
-            <!-- TODO: Ausstattung einpflegen -->
-            - Haus (ebenerdig)
-            allgemein:
-            - Fliegengitter im ganzen Haus
-            - kindergesicherte Steckdosen im ganzen Haus
-            - Bügeleisen
-            - Reinigungsmittel
-            - Staubsauger
-            - Verbandskasten
-            - Wäscheständer
-            - Zentralheizung
-            Küche (6 m²) / Selbstverpflegung:
-            - Gefrierfach, Kühlschrank, Kaffeemaschine, Backofen, Mikrowelle, Mixer Wasserkocher, Toaster, Ceran-Kochherd
-            - Geschirr, Geschirrhandtücher
-            - Gewürze
-            Wohnzimmer verfügt über
-            - Sessel, Sofa und einen schönen Kamin
-            - Spiele, Bücher/DVDs
-            - Fernseher, Radio, CD-Player, DVD-Spieler, Videorecorder?(siehe traum-ferienwohnung.de)
-            - Esstisch
-            Bad
-            - Dusche und WC, Waschtisch, Handtuchtrockner und Haartrockner
-            - Badetücher, Handtücher
-            - Kosmetikspiegel, Spiegel
-            1 Schlafzimmer (14 m²): Kleiderschrank, Doppelbett, Uhrenradio
-            1 Schlafzimmer (10 m²): Kleiderschrank, 2 Einzelbetten
-            1 Schlafzimmer (10 m²): Kleiderschrank, Doppelbettsofa
-
-            - Außenanlagen (4000 m²)
-            2 kostenlose Parkplätze auf dem Gelände
-            Hollywoodschaukel, Sonnenliege, Sonnenschirm
-            Spielgerüst
-            Liegewiese
-            Gartenmöbel
-            sehr gemütliche Terasse
-            Grillplatz + Holzkohlegrill
-            Katzen
-            Pferd
-
-            - Service
-            Rauchen nicht erlaubt
-            Wasser, Strom und Endreinigung im Endpreis enthalten
-            Bettwäsche, Hand- , Bade- und Küchentücher inclusive
-            kostenloses Kaminholz
-            keine Kurtaxe
-            Haustiere auf Anfrage
-
-            - Freizeit / Umgebung
-            Angeln, Joggen, Nordic Walking, Schwimmen, Schlittschuhlaufen, Zelten,
-            Radfahren/Cycling, Kart fahren, Bowling, Grillen, Inliner fahren, Vögel beobachten,
-            Reiten
-            Freibad Calau
-            Bäder: Spreewelten Bad in Lübbenau, Spreewaldtherme in Burg, Tropical Islands
-            Fährhäfen im Spreewald (Lübben, Lübbenau ,Burg)
-            Calauer Witzerundweg, Kino, Sommerrodelbahn, Zoo, Kutschfahrten, Museen, Ballonfahrten
-            Wendisch-deutsche Doppelkirche in Vetschau
-            Ausflüge nach Cottbus, Berlin und Dresden
-            Schlösser und Gärten in Berlin und Brandenburg
-
+        <!-- d-flex here breaks accordion !!! => use inner div! -->
+        <div class="container-fluid">
+            <div class="d-flex flex-wrap align-content-stretch">
+                <div class="card flex-fill">
+                    <h3 class="card-header">Allgemein</h3>
+                    <ul class="card-body">
+                        <li>Stockwerke: ebenerdig</li>
+                        <li>Fliegengitter im ganzen Haus</li>
+                        <li>kindergesicherte Steckdosen im ganzen Haus</li>
+                        <li>Bügeleisen</li>
+                        <li>Reinigungsmittel</li>
+                        <li>Staubsauger</li>
+                        <li>Verbandskasten</li>
+                        <li>Wäscheständer</li>
+                        <li>Zentralheizung</li>
+                    </ul>
+                </div>
+                <div class="card flex-fill">
+                    <h3 class="card-header">Küche (6 m²) / Selbstverpflegung</h3>
+                    <ul class="card-body">
+                        <li>Gefrierfach</li>
+                        <li>Kühlschrank</li>
+                        <li>Kaffeemaschine</li>
+                        <li>Backofen</li>
+                        <li>Mikrowelle</li>
+                        <li>Mixer</li>
+                        <li>Wasserkocher</li>
+                        <li>Toaster</li>
+                        <li>Ceran-Kochherd</li>
+                        <li>Geschirr</li>
+                        <li>Geschirrhandtücher</li>
+                        <li>Gewürze</li>
+                    </ul>
+                </div>
+                <div class="card flex-fill">
+                    <h3 class="card-header">Bad</h3>
+                    <ul class="card-body">
+                        <li>Dusche und WC</li>
+                        <li>Waschtisch</li>
+                        <li>Handtuchtrockner</li>
+                        <li>Haartrockner</li>
+                        <li>Badetücher</li>
+                        <li>Handtücher</li>
+                        <li>Kosmetikspiegel</li>
+                        <li>Spiegel</li>
+                    </ul>
+                </div>
+                <div class="card flex-fill">
+                    <h3 class="card-header">Schlafen</h3>
+                    <ul class="card-body">
+                        <li>1 Schlafzimmer (14 m²): Kleiderschrank, Doppelbett, Uhrenradio</li>
+                        <li>1 Schlafzimmer (10 m²): Kleiderschrank, 2 Einzelbetten</li>
+                        <li>1 Schlafzimmer (10 m²): Kleiderschrank, Doppelbettsofa</li>
+                    </ul>
+                </div>
+                <div class="card flex-fill">
+                    <h3 class="card-header">Wohnzimmer</h3>
+                    <ul class="card-body">
+                        <li>Sessel</li>
+                        <li>Sofa</li>
+                        <li>schöner Kamin</li>
+                        <li>Esstisch</li>
+                        <li>Spiele</li>
+                        <li>Bücher/DVDs</li>
+                        <li>Fernseher</li>
+                        <li>Radio</li>
+                        <li>CD-Player</li>
+                        <li>DVD-Spieler</li>
+                        <li>Geschirrhandtücher</li>
+                        <li>Gewürze</li>
+                    </ul>
+                </div>
+                <div class="card flex-fill">
+                    <h3 class="card-header">Außenanlagen (4000 m²)</h3>
+                    <ul class="card-body">
+                        <li>2 kostenlose Parkplätze auf dem Gelände</li>
+                        <li>Hollywoodschaukel</li>
+                        <li>Sonnenliege</li>
+                        <li>Sonnenschirm</li>
+                        <li>Spielgerüst</li>
+                        <li>Liegewiese</li>
+                        <li>Gartenmöbel</li>
+                        <li>sehr gemütliche Terasse</li>
+                        <li>Grillplatz mit Holzkohlegrill</li>
+                        <li>Katzen</li>
+                        <li>Pferd</li>
+                    </ul>
+                </div>
+                <div class="card flex-fill">
+                    <h3 class="card-header">Service</h3>
+                    <ul class="card-body">
+                        <li>Rauchen nicht erlaubt</li>
+                        <li>Wasser, Strom und Endreinigung im Endpreis enthalten</li>
+                        <li>Bettwäsche, Hand- , Bade- und Küchentücher inklusive</li>
+                        <li>kostenloses Kaminholz</li>
+                        <li>keine Kurtaxe</li>
+                        <li>Haustiere auf Anfrage</li>
+                    </ul>
+                </div>
+                <div class="card flex-fill">
+                    <h3 class="card-header">Freizeit / Umgebung</h3>
+                    <ul class="card-body">
+                        <li>Angeln, Joggen, Nordic Walking, Schwimmen, Schlittschuhlaufen, Zelten, Reiten</li>
+                        <li>Radfahren/Cycling, Kart fahren, Bowling, Grillen, Inliner fahren, Vögel beobachten</li>
+                        <li>Bäder: Freibad Calau, Spreewelten Bad in Lübbenau, Spreewaldtherme in Burg, Tropical Islands</li>
+                        <li>Fährhäfen im Spreewald (Lübben, Lübbenau ,Burg)</li>
+                        <li>Calauer Witzerundweg, Kino, Sommerrodelbahn, Zoo, Kutschfahrten, Museen, Ballonfahrten</li>
+                        <li>Wendisch-deutsche Doppelkirche in Vetschau</li>
+                        <li>Ausflüge nach Cottbus, Berlin und Dresden</li>
+                        <li>Schlösser und Gärten in Berlin und Brandenburg</li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <h3>Belegungskalender</h3>
         <div>
@@ -261,7 +315,12 @@
             </p>
         </div>
         <!-- TODO: use icons sand clock and back arrow -->
-        <h3>Buchungsanfragen <ul><li>~6h Antwortzeit</li><li>100% Antwortrate</li></ul></h3>
+        <h3>Buchungsanfragen
+            <ul>
+                <li>~6h Antwortzeit</li>
+                <li>100% Antwortrate</li>
+            </ul>
+        </h3>
         <div>
             <p>
                 <!-- TODO: Portal-Direktlinks -->
