@@ -110,7 +110,7 @@
     <!-- TODO: layout accordion sections to use only needed height instead of overall section max height-->
     <div id="accordion" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <h3>Beschreibung</h3>
-        <div>
+        <div id="description">
             <p>
                 Es erwartet Sie eine große, komfortable und geschmackvoll eingerichtete 4-Zimmer-Ferienwohnung auf einem
                 4000 m² großen Grundstück für bis zu 6 Personen bei Selbstverpflegung.
@@ -144,7 +144,7 @@
             </ul>
         </h3>
         <!-- d-flex here breaks accordion !!! => use inner div! -->
-        <div class="container-fluid">
+        <div id="interior" class="container-fluid">
             <div class="d-flex flex-wrap align-content-stretch">
                 <div class="card flex-fill">
                     <h3 class="card-header">Allgemein</h3>
@@ -258,11 +258,11 @@
             </div>
         </div>
         <h3>Belegungskalender</h3>
-        <div>
+        <div id="occupancy-calendar">
             <!-- TODO: einbinden von einer der anderen Seiten (ferienhaus-mieten-privat.de?) -->
         </div>
         <h3>Preise</h3>
-        <div>
+        <div id="price-list">
             ab 250,- €
             2 Personen/Woche
             <p>
@@ -321,14 +321,14 @@
                 <li>100% Antwortrate</li>
             </ul>
         </h3>
-        <div>
+        <div id="booking-request">
             <p>
                 <!-- TODO: Portal-Direktlinks -->
                 ... oder einfach anrufen, siehe Objektanschrift/Kontaktdaten
             </p>
         </div>
         <h3>Lage</h3>
-        <div>
+        <div id="location">
             <!-- TODO: layout -->
             <!-- TODO: maps verlinken wie auf Spreewald.de -->
             <p>

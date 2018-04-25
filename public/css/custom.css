@@ -101,7 +101,7 @@ body {
 }
 
 /* card adjustments */
-.card {
+#interior .card {
     width: 24%;
     min-width: 280px;
     margin-right: .5%;
