@@ -101,13 +101,27 @@ body {
 }
 
 /* card adjustments */
-#interior .card {
-    width: 24%;
+.card {
     min-width: 280px;
     margin-right: .5%;
     margin-left: .5%;
     margin-bottom: 5px;
     display: inline-flex;
+}
+.card ul {
+    margin-left: 10px;
+}
+.card table {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 1.25rem;
+}
+#interior .card {
+    width: 24%;
+}
+#price-list .card {
+    width: 49%
 }
 
 /* small devices (landscape phones, 544px and up) */
