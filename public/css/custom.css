@@ -74,6 +74,10 @@ body {
 }
 
 /* accordion adjustments */
+.ui-accordion .ui-accordion-content {
+    padding-right: 1em;
+    padding-left: 1em;
+}
 #accordion h3 {
     font-family: 'Tangerine', serif;
     font-size: 30px;
