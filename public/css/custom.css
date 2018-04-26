@@ -23,7 +23,6 @@ body {
     text-shadow: 3px 3px 3px #aaaaaa;
 }
 
-
 /* carousel */
 #carousel-frame {
     margin-bottom: 20px;
@@ -40,6 +39,7 @@ body {
     margin: 20px auto;
     width: 100%;
 }
+
 #image-carousel .carousel-indicators {
     margin: 10px;
     position: static;
@@ -47,6 +47,7 @@ body {
     white-space: nowrap;
     width: 100%;
 }
+
 #image-carousel .carousel-indicators li {
     background-color: transparent;
     -webkit-border-radius: 0;
@@ -56,16 +57,20 @@ body {
     max-width: 15%;
     height: auto;
 }
+
 #image-carousel .carousel-indicators li img.img-thumbnail {
     display: block;
     opacity: 0.5;
 }
+
 #image-carousel .carousel-indicators li.active img {
     opacity: 1;
 }
+
 #image-carousel .carousel-indicators li:hover img {
     opacity: 0.75;
 }
+
 #image-carousel .carousel-outer {
     position: relative;
 }
@@ -75,6 +80,7 @@ body {
     padding-right: 1em;
     padding-left: 1em;
 }
+
 #accordion h3 {
     font-family: 'Tangerine', serif;
     font-size: 30px;
@@ -109,18 +115,22 @@ body {
     margin-bottom: 5px;
     display: inline-flex;
 }
+
 .card ul {
     margin-left: 10px;
 }
+
 .card table {
     width: 95%;
     margin-left: 2.5%;
     margin-right: 2.5%;
     margin-top: 1.25rem;
 }
+
 #interior .card {
     width: 30%;
 }
+
 #price-list .card {
     width: 49%
 }
@@ -130,6 +140,24 @@ body {
     min-height: 1008px;
     height: 1008px;
     border: none;
+}
+
+#footer {
+    margin-top: 20px;
+}
+
+#imprint {
+    margin-bottom: 20px;
+}
+
+#footer, #imprint {
+    font-family: 'Arial', serif;
+    padding: 20px 30px;
+    background-color: #cccccc;
+}
+
+#footer h1, #footer h2, #footer h3 {
+    font-family: 'Tangerine', serif;
 }
 
 /* extra media query for iframe rendering */
@@ -181,7 +209,7 @@ body {
         font-size: 18px;
         font-family: 'Arial', serif;
         font-weight: bold;
-        color: #999;
+        color: #999999;
         display: inline-block;
         vertical-align: middle;
         margin: 0.5rem 0.5rem 0;
@@ -213,7 +241,7 @@ body {
         font-size: 18px;
         font-family: 'Arial', serif;
         font-weight: bold;
-        color: #999;
+        color: #999999;
         display: inline-block;
         vertical-align: middle;
         margin: 0.5rem 0.5rem 0;
