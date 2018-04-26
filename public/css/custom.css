@@ -10,8 +10,7 @@ body {
 
 #house-name {
     margin-left: 20%;
-    /* attributes to override in media queries */
-    margin-top: -9%;
+    margin-top: -40px;
 }
 
 #page-title {
@@ -20,8 +19,6 @@ body {
     width: 100%;
     font-weight: bold;
     margin: 20px 0;
-
-    /* attributes to override in media queries */
     font-size: 40px;
     text-shadow: 3px 3px 3px #aaaaaa;
 }
@@ -152,7 +149,7 @@ body {
     }
 
     #house-name {
-        margin-top: -12%;
+        margin-top: -60px;
     }
 
     #accordion h3 ul {
@@ -177,7 +174,7 @@ body {
     }
 
     #house-name {
-        margin-top: -14%;
+        margin-top: -90px;
     }
 
     #accordion h3 ul {
@@ -209,7 +206,7 @@ body {
     }
 
     #house-name {
-        margin-top: -13%;
+        margin-top: -120px;
     }
 
     #accordion h3 ul {
@@ -226,7 +223,5 @@ body {
 
 /* extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    #house-name {
-        margin-top: -11%;
-    }
+
 }
