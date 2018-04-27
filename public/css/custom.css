@@ -41,7 +41,7 @@ body {
 }
 
 #image-carousel .carousel-indicators {
-    margin: 10px;
+    margin: 10px 0;
     position: static;
     text-align: left;
     white-space: nowrap;
