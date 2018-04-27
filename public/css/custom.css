@@ -136,9 +136,9 @@ body {
 }
 
 #occupancy-calendar iframe {
-    width: 97%;
-    min-height: 1008px;
-    height: 1008px;
+    width: 100%;
+    min-height: 328px;
+    height: 328px;
     border: none;
 }
 
@@ -161,11 +161,10 @@ body {
 }
 
 /* extra media query for iframe rendering */
-@media (min-width: 521px) {
+@media (min-width: 493px) {
     #occupancy-calendar iframe {
-        width: 100%;
-        min-height: 690px;
-        height: 690px;
+        min-height: 190px;
+        height: 190px;
     }
 }
 
@@ -182,15 +181,6 @@ body {
 
     #accordion h3 ul {
         display: none;
-    }
-}
-
-/* extra media query for iframe rendering */
-@media (min-width: 641px) {
-
-    #occupancy-calendar iframe {
-        min-height: 531px;
-        height: 531px;
     }
 }
 
@@ -214,15 +204,6 @@ body {
         vertical-align: middle;
         margin: 0.5rem 0.5rem 0;
         float: right;
-    }
-}
-
-/* extra media query for iframe rendering */
-@media (min-width: 907px) {
-
-    #occupancy-calendar iframe {
-        min-height: 377px;
-        height: 377px;
     }
 }
 
