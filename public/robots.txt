@@ -1,0 +1,6 @@
+# robots.txt zu http://www.example.org/ 
+
+User-agent: * 
+Disallow: /css/ 
+Disallow: /fonts/ 
+Disallow: /js/
