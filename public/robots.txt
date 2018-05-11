@@ -1,4 +1,4 @@
-# robots.txt zu http://www.example.org/ 
+# robots.txt zu https://mein-ferienhaus-elisabeth.de/ 
 
 User-agent: * 
 Disallow: /css/ 
