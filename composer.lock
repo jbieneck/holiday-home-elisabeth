@@ -1,0 +1,108 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "cb54c0693e0113eebab5f6db284a3f05",
+    "packages": [
+        {
+            "name": "jbieneck/vacation-apartments-rest-api-sdk-php",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jbieneck/vacation-apartments-rest-api-sdk-php.git",
+                "reference": "d98e9d69f2b9718def2f6e6060aeee4024099fbe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jbieneck/vacation-apartments-rest-api-sdk-php/zipball/d98e9d69f2b9718def2f6e6060aeee4024099fbe",
+                "reference": "d98e9d69f2b9718def2f6e6060aeee4024099fbe",
+                "shasum": ""
+            },
+            "require": {
+                "nategood/httpful": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "VacationApartments": "src/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Janet Bieneck",
+                    "email": "fewo.elisabeth@gmail.com"
+                }
+            ],
+            "description": "REST API SDK PHP for https://traum-ferienwohnungen.de",
+            "homepage": "https://api.traum-ferienwohnungen.de",
+            "support": {
+                "source": "https://github.com/jbieneck/vacation-apartments-rest-api-sdk-php/tree/develop",
+                "issues": "https://github.com/jbieneck/vacation-apartments-rest-api-sdk-php/issues"
+            },
+            "time": "2018-05-18T19:24:29+00:00"
+        },
+        {
+            "name": "nategood/httpful",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nategood/httpful.git",
+                "reference": "f71452dadca62bbee12acee25e3a91ca7f887aaa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nategood/httpful/zipball/f71452dadca62bbee12acee25e3a91ca7f887aaa",
+                "reference": "f71452dadca62bbee12acee25e3a91ca7f887aaa",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Httpful": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nate Good",
+                    "email": "me@nategood.com",
+                    "homepage": "http://nategood.com"
+                }
+            ],
+            "description": "A Readable, Chainable, REST friendly, PHP HTTP Client",
+            "homepage": "http://github.com/nategood/httpful",
+            "keywords": [
+                "api",
+                "curl",
+                "http",
+                "requests",
+                "rest",
+                "restful"
+            ],
+            "time": "2017-10-21T21:42:11+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

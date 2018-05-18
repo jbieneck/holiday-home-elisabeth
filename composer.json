@@ -1,0 +1,24 @@
+{
+    "name": "holiday-home-elisabeth/homepage",
+    "description": "Ferienhaus Elisabeth",
+    "homepage": "https://mein-ferienhaus-elisabeth.de",
+    "type": "project",
+    "keywords": [ ],
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Janet Bieneck",
+            "email": "fewo.elisabeth@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/jbieneck/vacation-apartments-rest-api-sdk-php"
+        }
+    ],
+    "require": {
+        "jbieneck/vacation-apartments-rest-api-sdk-php": "*"
+    },
+    "minimum-stability": "dev"
+}

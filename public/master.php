@@ -20,20 +20,28 @@
     -->
 
     <title>Ferienhaus Elisabeth</title>
-    
+
     <!-- Webfonts for this template -->
-    <link rel="stylesheet" href="css/webfonts.css"/>
+    <link rel="stylesheet" href="css/webfonts.css" />
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
     <!-- JQuery UI CSS, e.g. accordion -->
-    <link rel="stylesheet" href="css/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="css/custom.css"/>
+    <link rel="stylesheet" href="css/custom.css" />
 </head>
 <body class="container-fluid">
+<!--<div style="font-family: 'Courier New, sans serif'">-->
+<!--    Debug-Info: <br/>-->
+<?php
+// get data from traum-ferienwohnungen.de API
+$vacationApartment = new VacationApartment();
+$listing           = $vacationApartment->getListing();
+?>
+<!--</div>-->
 
 <!-- TODO: add background image -->
 <!-- TODO: get data from traum-ferienwohnungen.de-->
@@ -275,7 +283,7 @@
             <ul>
                 <li>3 Schlafzimmer</li>
                 <li>max. 6 Personen</li>
-                <li>70 m²</li>
+                <li><?php echo $listing->getSize(); ?> m²</li>
             </ul>
         </h3>
         <!-- d-flex here breaks accordion !!! => use inner div! -->
@@ -607,7 +615,9 @@
         </div>
     </div>
     <div id="footer">
-        <h3><a id="imprint-anchor" href="#imprint" data-toggle="collapse" data-target="#imprint">Impressum / Datenschutzerklärug</a></h3>
+        <h3><a id="imprint-anchor" href="#imprint" data-toggle="collapse" data-target="#imprint">Impressum /
+                                                                                                 Datenschutzerklärug</a>
+        </h3>
     </div>
     <div id="imprint" class="collapse">
         <strong>Sie finden uns auch auf folgenden Seiten:</strong>
@@ -637,113 +647,114 @@
             Telefon: 03541 801305 oder 0174 3447460<br>
             E-Mail: <a href='mailto:fewo.elisabeth@gmail.com'>fewo.elisabeth@gmail.com</a></br>
         </p>
-		<br>
+        <br>
         <p>
-            <h4>Haftungsausschluss: </h4>
-            <strong>Haftung für Inhalte</strong><br><br>
-            Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit
-            und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß
-            § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§
-            8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte
-            fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit
-            hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den
-            allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem
-            Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden
-            Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.<br><br>
-            <strong>Haftung für Links</strong><br><br>
-            Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben.
-            Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
-            verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die
-            verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft.
-            Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche
-            Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht
-            zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend
-            entfernen.<br><br>
-            <strong>Urheberrecht</strong><br><br>
-            Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen
-            Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
-            Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
-            Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
-            Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte
-            Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem
-            auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei
-            Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.<br>
-            <!--<strong>Google Analytics</strong><br><br>-->
-            <!--Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (''Google''). Google-->
-            <!--Analytics verwendet sog. ''Cookies'', Textdateien, die auf Ihrem Computer gespeichert werden und die-->
-            <!--eine Analyse der Benutzung der Website durch Sie ermöglicht. Die durch den Cookie erzeugten-->
-            <!--Informationen über Ihre Benutzung dieser Website (einschließlich Ihrer IP-Adresse) wird an einen Server-->
-            <!--von Google in den USA übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre-->
-            <!--Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten für die Websitebetreiber-->
-            <!--zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene-->
-            <!--Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen,-->
-            <!--sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten.-->
-            <!--Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Sie-->
-            <!--können die Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser Software-->
-            <!--verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche-->
-            <!--Funktionen dieser Website voll umfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie-->
-            <!--sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und-->
-            <!--Weise und zu dem zuvor benannten Zweck einverstanden.-->
+        <h4>Haftungsausschluss: </h4>
+        <strong>Haftung für Inhalte</strong><br><br>
+        Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit
+        und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß
+        § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§
+        8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte
+        fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit
+        hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den
+        allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem
+        Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden
+        Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.<br><br>
+        <strong>Haftung für Links</strong><br><br>
+        Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben.
+        Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
+        verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die
+        verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft.
+        Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche
+        Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht
+        zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend
+        entfernen.<br><br>
+        <strong>Urheberrecht</strong><br><br>
+        Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen
+        Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
+        Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+        Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
+        Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte
+        Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem
+        auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei
+        Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.<br>
+        <!--<strong>Google Analytics</strong><br><br>-->
+        <!--Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (''Google''). Google-->
+        <!--Analytics verwendet sog. ''Cookies'', Textdateien, die auf Ihrem Computer gespeichert werden und die-->
+        <!--eine Analyse der Benutzung der Website durch Sie ermöglicht. Die durch den Cookie erzeugten-->
+        <!--Informationen über Ihre Benutzung dieser Website (einschließlich Ihrer IP-Adresse) wird an einen Server-->
+        <!--von Google in den USA übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre-->
+        <!--Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten für die Websitebetreiber-->
+        <!--zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene-->
+        <!--Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen,-->
+        <!--sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten.-->
+        <!--Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Sie-->
+        <!--können die Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser Software-->
+        <!--verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche-->
+        <!--Funktionen dieser Website voll umfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie-->
+        <!--sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und-->
+        <!--Weise und zu dem zuvor benannten Zweck einverstanden.-->
         </p>
         Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a>
         <br><br><br>
-			<h4>Datenschutzerkl&auml;rung</h4>
-			<strong>Datenschutz</strong>
-			<p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer
-				pers&ouml;nlichen Daten sehr ernst. Wir behandeln Ihre
-				personenbezogenen Daten vertraulich und entsprechend der
-				gesetzlichen Datenschutzvorschriften sowie dieser
-				Datenschutzerkl&auml;rung.</p>
-			<p>Die Nutzung unserer Website ist in der Regel ohne Angabe
-				personenbezogener Daten m&ouml;glich. Soweit auf unseren Seiten
-				personenbezogene Daten (beispielsweise Name, Anschrift oder
-				E-Mail-Adressen) erhoben werden, erfolgt dies, soweit m&ouml;glich,
-				stets auf freiwilliger Basis. Diese Daten werden ohne Ihre
-				ausdr&uuml;ckliche Zustimmung nicht an Dritte weitergegeben.</p>
-			<p>Wir weisen darauf hin, dass die Daten&uuml;bertragung im
-				Internet (z.B. bei der Kommunikation per E-Mail)
-				Sicherheitsl&uuml;cken aufweisen kann. Ein l&uuml;ckenloser Schutz
-				der Daten vor dem Zugriff durch Dritte ist nicht m&ouml;glich.</p>
-			<strong>Server-Log- Files</strong>
-			<p>Der Provider der Seiten erhebt und speichert automatisch
-				Informationen in so genannten Server-Log Files, die Ihr Browser
-				automatisch an uns &uuml;bermittelt. Dies sind:</p>
-			<ul>
-				<li>Uhrzeit der Serveranfrage</li>
-				<li>IP-Adresse</li>
-				<li>Besuchte Webseite</li>
-				<li>Referrer URL</li>
-				<li>Browsertyp und Browserversion</li>
-				<li>Menge der gesendeten Daten in Byte</li>
-				<li>verwendetes Betriebssystem</li>
-				<li>Hostname des zugreifenden Rechners</li>
-			</ul>
-			<p>Die erhobenen Daten dienen lediglich statistischen Auswertungen und werden zur Verbesserung der Website verwendet. 
-			Der Websitebetreiber beh&auml;lt sich allerdings vor, die Server-Logfiles nachtr&auml;glich zu &uuml;berpr&uuml;fen, 
-			sollten konkrete Anhaltspunkte auf eine rechtswidrige Nutzung hinweisen.</p>
-			<strong>SSL-Verschl&uuml;sselung</strong>
-			<p>Diese Seite nutzt aus Gr&uuml;nden der Sicherheit und zum
-				Schutz der &Uuml;bertragung vertraulicher Inhalte, wie zum Beispiel
-				der Anfragen, die Sie an uns als Seitenbetreiber senden, eine
-				SSL-Verschl&uuml;sselung. Eine verschl&uuml;sselte Verbindung
-				erkennen Sie daran, dass die Adresszeile des Browsers von
-				&quot;http://&quot; auf &quot;https://&quot; wechselt und an dem
-				Schloss-Symbol in Ihrer Browserzeile.</p>
-			<p>Wenn die SSL Verschl&uuml;sselung aktiviert ist, k&ouml;nnen
-				die Daten, die Sie an uns &uuml;bermitteln, nicht von Dritten
-				mitgelesen werden.</p>
-			<strong>Widerspruch Werbe-Mails</strong>
-			<p>Der Nutzung von im Rahmen der Impressumspflicht
-				ver&ouml;ffentlichten Kontaktdaten zur &Uuml;bersendung von nicht
-				ausdr&uuml;cklich angeforderter Werbung und Informationsmaterialien
-				wird hiermit widersprochen. Die Betreiber der Seiten behalten sich
-				ausdr&uuml;cklich rechtliche Schritte im Falle der unverlangten
-				Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor.</p>
-			<p>
-				Quelle: <a
-					href="https://www.e-recht24.de/muster-datenschutzerklaerung.html">https://www.e-recht24.de/muster-datenschutzerklaerung.html</a>
-			</p>
-		</div>
+        <h4>Datenschutzerkl&auml;rung</h4>
+        <strong>Datenschutz</strong>
+        <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer
+           pers&ouml;nlichen Daten sehr ernst. Wir behandeln Ihre
+           personenbezogenen Daten vertraulich und entsprechend der
+           gesetzlichen Datenschutzvorschriften sowie dieser
+           Datenschutzerkl&auml;rung.</p>
+        <p>Die Nutzung unserer Website ist in der Regel ohne Angabe
+           personenbezogener Daten m&ouml;glich. Soweit auf unseren Seiten
+           personenbezogene Daten (beispielsweise Name, Anschrift oder
+           E-Mail-Adressen) erhoben werden, erfolgt dies, soweit m&ouml;glich,
+           stets auf freiwilliger Basis. Diese Daten werden ohne Ihre
+           ausdr&uuml;ckliche Zustimmung nicht an Dritte weitergegeben.</p>
+        <p>Wir weisen darauf hin, dass die Daten&uuml;bertragung im
+           Internet (z.B. bei der Kommunikation per E-Mail)
+           Sicherheitsl&uuml;cken aufweisen kann. Ein l&uuml;ckenloser Schutz
+           der Daten vor dem Zugriff durch Dritte ist nicht m&ouml;glich.</p>
+        <strong>Server-Log- Files</strong>
+        <p>Der Provider der Seiten erhebt und speichert automatisch
+           Informationen in so genannten Server-Log Files, die Ihr Browser
+           automatisch an uns &uuml;bermittelt. Dies sind:</p>
+        <ul>
+            <li>Uhrzeit der Serveranfrage</li>
+            <li>IP-Adresse</li>
+            <li>Besuchte Webseite</li>
+            <li>Referrer URL</li>
+            <li>Browsertyp und Browserversion</li>
+            <li>Menge der gesendeten Daten in Byte</li>
+            <li>verwendetes Betriebssystem</li>
+            <li>Hostname des zugreifenden Rechners</li>
+        </ul>
+        <p>Die erhobenen Daten dienen lediglich statistischen Auswertungen und werden zur Verbesserung der Website
+           verwendet.
+           Der Websitebetreiber beh&auml;lt sich allerdings vor, die Server-Logfiles nachtr&auml;glich zu &uuml;berpr&uuml;fen,
+           sollten konkrete Anhaltspunkte auf eine rechtswidrige Nutzung hinweisen.</p>
+        <strong>SSL-Verschl&uuml;sselung</strong>
+        <p>Diese Seite nutzt aus Gr&uuml;nden der Sicherheit und zum
+           Schutz der &Uuml;bertragung vertraulicher Inhalte, wie zum Beispiel
+           der Anfragen, die Sie an uns als Seitenbetreiber senden, eine
+           SSL-Verschl&uuml;sselung. Eine verschl&uuml;sselte Verbindung
+           erkennen Sie daran, dass die Adresszeile des Browsers von
+           &quot;http://&quot; auf &quot;https://&quot; wechselt und an dem
+           Schloss-Symbol in Ihrer Browserzeile.</p>
+        <p>Wenn die SSL Verschl&uuml;sselung aktiviert ist, k&ouml;nnen
+           die Daten, die Sie an uns &uuml;bermitteln, nicht von Dritten
+           mitgelesen werden.</p>
+        <strong>Widerspruch Werbe-Mails</strong>
+        <p>Der Nutzung von im Rahmen der Impressumspflicht
+           ver&ouml;ffentlichten Kontaktdaten zur &Uuml;bersendung von nicht
+           ausdr&uuml;cklich angeforderter Werbung und Informationsmaterialien
+           wird hiermit widersprochen. Die Betreiber der Seiten behalten sich
+           ausdr&uuml;cklich rechtliche Schritte im Falle der unverlangten
+           Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor.</p>
+        <p>
+            Quelle: <a
+                href="https://www.e-recht24.de/muster-datenschutzerklaerung.html">https://www.e-recht24.de/muster-datenschutzerklaerung.html</a>
+        </p>
+    </div>
 </div>
 
 <!-- loading js code => placed at the end of the document so the pages load faster -->
