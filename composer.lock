@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jbieneck/vacation-apartments-rest-api-sdk-php.git",
-                "reference": "d98e9d69f2b9718def2f6e6060aeee4024099fbe"
+                "reference": "bbed715349815a5e22b94cdcc5f3d3cdadbbce77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jbieneck/vacation-apartments-rest-api-sdk-php/zipball/d98e9d69f2b9718def2f6e6060aeee4024099fbe",
-                "reference": "d98e9d69f2b9718def2f6e6060aeee4024099fbe",
+                "url": "https://api.github.com/repos/jbieneck/vacation-apartments-rest-api-sdk-php/zipball/bbed715349815a5e22b94cdcc5f3d3cdadbbce77",
+                "reference": "bbed715349815a5e22b94cdcc5f3d3cdadbbce77",
                 "shasum": ""
             },
             "require": {
@@ -44,7 +44,7 @@
                 "source": "https://github.com/jbieneck/vacation-apartments-rest-api-sdk-php/tree/develop",
                 "issues": "https://github.com/jbieneck/vacation-apartments-rest-api-sdk-php/issues"
             },
-            "time": "2018-05-18T19:24:29+00:00"
+            "time": "2018-05-18T22:41:16+00:00"
         },
         {
             "name": "nategood/httpful",
